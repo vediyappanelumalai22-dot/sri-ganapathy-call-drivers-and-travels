@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sri Ganapathy Call Drivers &amp; Travels | Call Driver &amp; Car Rental in Chennai</title>
+<meta name="description" content="Professional call drivers, airport transfers, outstation and one-way car rental in Chennai. 24/7 verified chauffeurs from T. Nagar." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Inter:wght@500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #020d26;
+    --bg-2: #06132b;
+    --surface: #131f38;
+    --line: #1e2943;
+    --gold: #e8c176;
+    --gold-ink: #412d00;
+    --text: #d9e2ff;
+    --muted: #d1c5b4;
+    --wa: #25d366;
+    --radius: 8px;
+    --container: 1232px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  button, input, textarea, select { font: inherit; }
+
+  .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+  section { padding: 96px 0; position: relative; }
+
+  h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; line-height: 1.15; letter-spacing: -0.02em; }
+  h1 { font-size: 48px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 22px; line-height: 1.3; }
+  p { color: var(--muted); font-size: 18px; line-height: 1.625; }
+
+  .eyebrow {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .divider { width: 64px; height: 2px; background: var(--gold); margin: 20px 0 24px; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 14px 28px; border-radius: 2px; border: 1px solid transparent; cursor: pointer;
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    transition: transform .15s ease, background .2s ease, border-color .2s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-gold { background: var(--gold); color: var(--gold-ink); }
+  .btn-gold:hover { background: #f0cd8b; }
+  .btn-dark { background: var(--bg-2); color: var(--text); border-color: var(--line); }
+  .btn-dark:hover { border-color: var(--gold); }
+  .btn-wa { background: var(--wa); color: #04210f; }
+  .btn-wa:hover { background: #3be07a; }
+  .btn-block { width: 100%; }
+  .btn:disabled { opacity: .6; cursor: wait; transform: none; }
+
+  /* Header */
+  header.site {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(2, 13, 38, .85); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: var(--text); }
+  .brand span { color: var(--gold); }
+  .nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--muted); }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 10px 18px; background: var(--gold); color: var(--gold-ink); border-radius: 2px; }
+
+  /* Hero */
+  .hero { padding: 80px 0 72px; overflow: hidden; background:
+    radial-gradient(600px 400px at 0% 0%, rgba(232,193,118,.10), transparent 60%),
+    radial-gradient(500px 500px at 100% 100%, rgba(26,115,232,.12), transparent 60%),
+    var(--bg); }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+  .hero h1 { margin-bottom: 24px; }
+  .hero h1 em { font-style: italic; color: var(--gold); font-weight: 500; }
+  .hero-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .chip {
+    font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: .04em;
+    padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg-2); color: var(--text);
+  }
+  .chip::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); margin-right: 8px; vertical-align: middle; }
+  .hero-visual {
+    position: relative; height: 440px; border-radius: var(--radius); overflow: hidden;
+    background:
+      linear-gradient(160deg, rgba(2,13,38,.15) 0%, rgba(2,13,38,.85) 100%),
+      radial-gradient(circle at 30% 30%, #1a73e8 0%, #06132b 55%, #020d26 100%);
+    border: 1px solid var(--line);
+  }
+  .hero-visual .road {
+    position: absolute; left: -10%; right: -10%; bottom: 0; height: 45%;
+    background: linear-gradient(to top, #06132b, transparent);
+    clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%);
+    opacity: .6;
+  }
+  .badge {
+    position: absolute; left: 24px; right: 24px; bottom: 24px;
+    background: rgba(19, 31, 56, .6); backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius);
+    padding: 20px 22px; display: flex; gap: 16px; align-items: flex-start;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  .badge-icon { flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%; background: rgba(232,193,118,.15); color: var(--gold); display: grid; place-items: center; }
+  .badge small { display: block; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .12em; color: var(--gold); margin-bottom: 4px; }
+  .badge p { font-size: 15px; line-height: 1.5; color: var(--text); }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 40px; }
+
+  /* Feature grid */
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 32px; display: flex; flex-direction: column; gap: 16px;
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+  }
+  .card:hover { transform: translateY(-4px); border-color: rgba(232,193,118,.4); box-shadow: 0 16px 40px rgba(0,0,0,.35); }
+  .card .icon {
+    width: 48px; height: 48px; border-radius: 6px; background: rgba(232,193,118,.1); color: var(--gold);
+    display: grid; place-items: center;
+  }
+  .card p { font-size: 16px; line-height: 1.6; }
+  .card .tag {
+    margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line);
+    font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .12em; color: var(--gold);
+  }
+  .card .link {
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; color: var(--gold);
+    display: inline-flex; align-items: center; gap: 6px; margin-top: auto;
+  }
+  .card .link:hover { text-decoration: underline; }
+  .card .index {
+    font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .12em; color: var(--muted);
+  }
+
+  .section-head { max-width: 768px; margin-bottom: 56px; }
+  .section-head p { margin-top: 20px; }
+
+  /* Services */
+  .services { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%); }
+
+  /* Banner */
+  .banner { padding: 40px 0 96px; }
+  .banner-card {
+    position: relative; display: grid; grid-template-columns: 7fr 5fr; min-height: 360px;
+    border-radius: var(--radius); overflow: hidden; background: var(--bg-2); border: 1px solid var(--line);
+    box-shadow: 0 30px 60px rgba(0,0,0,.4);
+  }
+  .banner-text { padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
+  .banner-text h2 { font-size: 40px; margin: 12px 0 20px; }
+  .banner-text p { font-size: 16px; margin-bottom: 28px; }
+  .banner-visual {
+    background:
+      linear-gradient(90deg, var(--bg-2) 0%, rgba(6,19,43,.2) 60%),
+      linear-gradient(160deg, #0b2a5e 0%, #06132b 60%, #020d26 100%);
+    position: relative;
+  }
+  .banner-visual::after {
+    content: ""; position: absolute; inset: 0;
+    background: repeating-linear-gradient(90deg, transparent 0 60px, rgba(232,193,118,.04) 60px 61px);
+  }
+  .banner-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  /* Quote form */
+  .quote { background: var(--bg); }
+  .quote-wrap { display: grid; gap: 40px; }
+  .form-card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 40px; box-shadow: 0 30px 60px rgba(0,0,0,.35);
+  }
+  form.quote-form { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .field { display: flex; flex-direction: column; gap: 8px; }
+  .field.full { grid-column: 1 / -1; }
+  .field label {
+    font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--gold);
+  }
+  .field label .req { color: var(--gold); }
+  .field input {
+    height: 46px; padding: 0 16px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 4px;
+    color: var(--text); font-size: 15px; outline: none; transition: border-color .2s ease, box-shadow .2s ease;
+  }
+  .field input::placeholder { color: #6b7280; }
+  .field input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(232,193,118,.15); }
+  .field input.invalid { border-color: #f87171; }
+  .form-footer { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; padding-top: 8px; }
+  .form-footer small { font-size: 13px; color: var(--muted); max-width: 420px; }
+  .status { grid-column: 1 / -1; font-size: 15px; padding: 14px 16px; border-radius: 4px; display: none; }
+  .status.show { display: block; }
+  .status.ok { background: rgba(37,211,102,.12); color: #8ff0b3; border: 1px solid rgba(37,211,102,.3); }
+  .status.err { background: rgba(248,113,113,.1); color: #fca5a5; border: 1px solid rgba(248,113,113,.3); }
+
+  .whatsapp-box {
+    display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between;
+    background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 28px;
+  }
+  .whatsapp-box h3 { font-size: 18px; margin-bottom: 4px; }
+  .whatsapp-box p { font-size: 15px; }
+
+  /* Quick dispatch bar */
+  .dispatch { padding: 0 0 96px; }
+  .dispatch-bar {
+    display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 16px; align-items: end;
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px;
+  }
+  .dispatch-bar .field input { background: var(--bg-2); }
+
+  /* Testimonials */
+  .testimonials { background: var(--bg-2); }
+  .quote-card { justify-content: space-between; }
+  .quote-card .mark { font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1; color: var(--gold); }
+  .quote-card blockquote { font-size: 16px; line-height: 1.6; color: var(--text); }
+  .quote-card .author { font-family: 'Inter', sans-serif; font-weight: 600; color: var(--text); font-size: 15px; margin-top: 8px; }
+  .quote-card .role { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .12em; color: var(--gold); margin-top: 4px; }
+  .stars { color: var(--gold); letter-spacing: 2px; font-size: 14px; }
+
+  /* FAQ */
+  .faq-list { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  details.faq {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 0 20px; transition: border-color .2s ease;
+  }
+  details.faq[open] { border-color: rgba(232,193,118,.4); }
+  details.faq summary {
+    list-style: none; cursor: pointer; min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; color: var(--text);
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after {
+    content: ""; flex: 0 0 auto; width: 8px; height: 8px; border-right: 2px solid var(--gold); border-bottom: 2px solid var(--gold);
+    transform: rotate(45deg); transition: transform .2s ease; margin-right: 4px;
+  }
+  details.faq[open] summary::after { transform: rotate(-135deg); }
+  details.faq .answer { padding: 0 0 20px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+  details.faq.wide { grid-column: 1 / -1; }
+
+  /* Location */
+  .location { background: var(--bg); }
+  .loc-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 24px; align-items: stretch; }
+  .nap {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 36px;
+    display: flex; flex-direction: column; gap: 24px;
+  }
+  .nap h3 { font-size: 24px; }
+  .nap .tagline { font-family: 'Playfair Display', serif; font-style: italic; color: var(--gold); font-size: 18px; }
+  .nap-row { display: grid; grid-template-columns: 36px 1fr; gap: 12px; }
+  .nap-row .ico { width: 36px; height: 36px; border-radius: 50%; background: rgba(232,193,118,.1); color: var(--gold); display: grid; place-items: center; }
+  .nap-row small { display: block; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .12em; color: var(--gold); margin-bottom: 4px; }
+  .nap-row div { font-size: 15px; color: var(--text); }
+  .nap-row a:hover { color: var(--gold); }
+  .areas { display: flex; flex-wrap: wrap; gap: 8px; }
+  .areas span { font-size: 12px; padding: 6px 12px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+  .map-card {
+    position: relative; min-height: 460px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line);
+    background:
+      linear-gradient(rgba(2,13,38,.5), rgba(2,13,38,.5)),
+      repeating-linear-gradient(0deg, #13223f 0 1px, transparent 1px 48px),
+      repeating-linear-gradient(90deg, #13223f 0 1px, transparent 1px 48px),
+      #0a1b38;
+  }
+  .map-pin {
+    position: absolute; left: 50%; top: 45%; transform: translate(-50%, -100%);
+    width: 44px; height: 44px; border-radius: 50% 50% 50% 0; background: var(--gold); transform-origin: center;
+    rotate: -45deg; box-shadow: 0 0 0 8px rgba(232,193,118,.15);
+  }
+  .map-card .map-info {
+    position: absolute; left: 16px; right: 16px; bottom: 16px;
+    background: rgba(2,13,38,.9); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px;
+    display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;
+  }
+  .map-info p { font-size: 14px; line-height: 1.4; color: var(--text); }
+  .map-info small { color: var(--muted); font-size: 12px; }
+
+  /* Closing CTA */
+  .closing {
+    position: relative; padding: 120px 0; text-align: center; overflow: hidden;
+    background:
+      linear-gradient(180deg, rgba(2,13,38,.6) 0%, rgba(2,13,38,.95) 100%),
+      radial-gradient(800px 400px at 50% 0%, rgba(26,115,232,.25), transparent 70%),
+      var(--bg-2);
+    border-top: 1px solid var(--line);
+  }
+  .closing h2 { font-size: 56px; margin-bottom: 16px; }
+  .closing h2 em { color: var(--gold); font-style: italic; }
+  .closing p { max-width: 640px; margin: 0 auto 36px; }
+  .closing .phone { font-family: 'Playfair Display', serif; font-size: 36px; color: var(--text); display: block; margin-bottom: 28px; }
+  .closing-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+  /* Footer */
+  footer { padding: 48px 0 40px; border-top: 1px solid var(--line); background: var(--bg); }
+  .foot { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; }
+  .foot p { font-size: 14px; }
+  .foot .links { display: flex; gap: 20px; font-size: 14px; color: var(--muted); }
+  .foot .links a:hover { color: var(--gold); }
+
+  .floating-wa {
+    position: fixed; right: 20px; bottom: 20px; z-index: 60;
+    width: 56px; height: 56px; border-radius: 50%; background: var(--wa); color: #04210f;
+    display: grid; place-items: center; box-shadow: 0 10px 30px rgba(37,211,102,.35);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    h1 { font-size: 40px; }
+    h2 { font-size: 30px; }
+    .hero-grid, .loc-grid, .banner-card { grid-template-columns: 1fr; }
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    .dispatch-bar { grid-template-columns: 1fr 1fr; }
+    .closing h2 { font-size: 42px; }
+  }
+  @media (max-width: 720px) {
+    section { padding: 64px 0; }
+    .container { padding: 0 18px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 28px; }
+    p { font-size: 16px; }
+    .nav-links { display: none; }
+    .grid-3, .faq-list { grid-template-columns: 1fr; }
+    .hero { padding-top: 48px; }
+    .hero-visual { height: 340px; }
+    .banner-text { padding: 32px 24px; }
+    .banner-text h2 { font-size: 30px; }
+    .banner-visual { min-height: 220px; }
+    .form-card { padding: 24px; }
+    form.quote-form { grid-template-columns: 1fr; }
+    .dispatch-bar { grid-template-columns: 1fr; }
+    .closing h2 { font-size: 34px; }
+    .closing .phone { font-size: 26px; }
+    .nap { padding: 24px; }
+    .map-card { min-height: 360px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site">
+  <div class="container nav">
+    <a href="#top" class="brand">Sri Ganapathy <span>Call Drivers</span></a>
+    <nav class="nav-links">
+      <a href="#why">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#faq">FAQ</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#location">Location</a>
+    </nav>
+    <a href="#quote" class="nav-cta">Get a Quote</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 1. Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Your Trusted Travel Partner in Chennai</span>
+      <h1>Professional Call Drivers in Chennai <em>&amp; Premium Car Rental</em> Services</h1>
+      <p>From everyday city travel to airport transfers and outstation journeys, Sri Ganapathy Call Drivers &amp; Travels makes every trip convenient and comfortable.</p>
+      <p style="margin-top:16px;">Whether you need an experienced call driver for your personal car or dependable chauffeur-driven travel, we're here to help you travel with confidence.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-gold">Professional Call Drivers Chennai</a>
+        <a href="#services" class="btn btn-dark">24/7 Verified Chauffeurs</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip">Chennai Airport Pickup</span>
+        <span class="chip">Outstation Car Rental</span>
+        <span class="chip">Hourly &amp; Daily Packages</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" role="img" aria-label="Professional call driver service in Chennai and premium outstation travel fleet">
+      <div class="road"></div>
+      <div class="badge">
+        <div class="badge-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </div>
+        <div>
+          <small>YOUR JOURNEY, OUR RESPONSIBILITY.</small>
+          <p>Professional, reliable, and punctual travel solutions based in T. Nagar, Chennai.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Why choose us -->
+<section id="why" style="padding-top:24px;">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why Travel With Us?</span>
+      <h2>Why Choose Our Call Driver Service Chennai &amp; Rental Solutions</h2>
+      <p>At Sri Ganapathy Call Drivers &amp; Travels, we understand that every journey matters. Whether you're travelling for business, spending time with family, heading to the airport, or planning an outstation trip, we focus on making your travel arrangements simple, comfortable and convenient.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+        <h3>Professional Call Drivers in Chennai</h3>
+        <p>Experienced, background-checked chauffeurs ready to drive your personal manual or luxury automatic vehicle with disciplined road ethics and absolute care.</p>
+        <span class="tag">CITY &amp; OUTSTATION AVAILABLE</span>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Verified &amp; Disciplined Chauffeurs</h3>
+        <p>Every chauffeur undergoes strict background verification, route training, and etiquette evaluation to deliver safe, calm, and dependable journeys.</p>
+        <span class="tag">TRUST &amp; PROFESSIONALISM</span>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16l20-6-20-6 4 6-4 6zM6 10h14"/></svg></div>
+        <h3>Chennai Airport Pickup and Drop Service</h3>
+        <p>Timely pickups and drop-offs for Chennai International Airport (MAA). Guaranteed punctuality during ungodly midnight and early morning arrival windows.</p>
+        <span class="tag">REAL-TIME FLIGHT SYNC</span>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17h18M5 17l2-7h10l2 7M7 10l2-4h6l2 4"/></svg></div>
+        <h3>Outstation Car Rental Chennai</h3>
+        <p>Effortless point-to-point intra-city commutes or relaxing road trips to Pondicherry, Bangalore, Tirupati, Vellore, and all southern pilgrimage circuits.</p>
+        <span class="tag">INTERCITY EXPRESS ROUTES</span>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 6h6a4 4 0 0 1 0 8h-4a4 4 0 0 0 0 8h6"/></svg></div>
+        <h3>Flexible Travel Solutions</h3>
+        <p>Choose between one-way direct drops, multiple-stop day rentals, or dedicated multi-day round-trips adapted dynamically to your business schedule.</p>
+        <span class="tag">CUSTOM MULTI-STOP PLANS</span>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Customer-Focused Service</h3>
+        <p>Prompt communication via direct phone desk and WhatsApp, courteous driver conduct, upfront transparent quotes, and zero hidden billing surprises.</p>
+        <span class="tag">DIRECT EXECUTIVE HELPLINE</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Services -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Comprehensive Chennai Car Rental Services &amp; Driver Solutions</h2>
+      <p>From professional driving assistance to comfortable car rental options, discover convenient travel services for every occasion.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card">
+        <div class="index">01 / SERVICE</div>
+        <h3>Professional Call Drivers in Chennai</h3>
+        <p>Expert verified chauffeurs dispatched directly to drive your personal car. Perfect for evening events, corporate executives, medical appointments, and city traffic relief.</p>
+        <a href="#quote" class="link">Enquire now →</a>
+      </article>
+      <article class="card">
+        <div class="index">02 / SERVICE</div>
+        <h3>Chennai Airport Pickup and Drop Service</h3>
+        <p>Punctual domestic &amp; international terminal transfers at Chennai Airport (MAA). Clean vehicles, courteous meet-and-greet support, and luggage handling guaranteed.</p>
+        <a href="#quote" class="link">Enquire now →</a>
+      </article>
+      <article class="card">
+        <div class="index">03 / SERVICE</div>
+        <h3>Local Chennai Travel &amp; Sightseeing</h3>
+        <p>Stress-free hourly and daily packages for shopping expeditions across T. Nagar and Sowcarpet, heritage temple visits, family functions, or corporate board meetings.</p>
+        <a href="#quote" class="link">Enquire now →</a>
+      </article>
+      <article class="card">
+        <div class="index">04 / SERVICE</div>
+        <h3>Outstation Car Rental Chennai</h3>
+        <p>Comfortable intercity highway connectivity across Tamil Nadu, Pondicherry, Andhra Pradesh, and Karnataka. Skilled highway chauffeurs with deep route mastery.</p>
+        <a href="#quote" class="link">Enquire now →</a>
+      </article>
+      <article class="card">
+        <div class="index">05 / SERVICE</div>
+        <h3>One Way Car Rental Chennai</h3>
+        <p>Cost-effective point-to-point drop services between Chennai and regional cities without paying return tariff charges. Efficient, safe, and transparently billed.</p>
+        <a href="#quote" class="link">Enquire now →</a>
+      </article>
+      <article class="card">
+        <div class="index">06 / SERVICE</div>
+        <h3>Round-Trip &amp; Family Travel Chennai</h3>
+        <p>Complete itinerary flexibility with your dedicated chauffeur on standby. Ideal for pilgrimage circuits, weekend retreats, family celebrations, and commercial tours.</p>
+        <a href="#quote" class="link">Enquire now →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Helpful Travel Information</span>
+      <h2>Frequently Asked Questions About Car Rental &amp; Driver Services in Chennai</h2>
+      <p>Clear answers regarding vehicle choices, chauffeur verification, fare calculations, and booking workflows.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq">
+        <summary>1. How can I book a car?</summary>
+        <div class="answer">Fill in the quote form on this page, or message our dispatch desk on WhatsApp. We confirm vehicle availability and pricing before you travel.</div>
+      </details>
+      <details class="faq">
+        <summary>2. What driver services do you provide?</summary>
+        <div class="answer">We provide call drivers for your own car, chauffeur-driven sedans and SUVs, airport transfers, outstation trips and hourly or daily packages.</div>
+      </details>
+      <details class="faq">
+        <summary>3. Can I hire a call driver for hourly or daily requirements?</summary>
+        <div class="answer">Yes. Hourly and full-day packages are available for shopping, family functions, meetings and sightseeing across Chennai.</div>
+      </details>
+      <details class="faq">
+        <summary>4. Do you offer professional call drivers?</summary>
+        <div class="answer">Yes. Every call driver is background-verified and trained in road discipline and customer etiquette.</div>
+      </details>
+      <details class="faq">
+        <summary>5. Do you provide Chennai Airport pickup and drop?</summary>
+        <div class="answer">Yes, for domestic and international terminals at Chennai Airport (MAA), including early-morning and late-night arrivals.</div>
+      </details>
+      <details class="faq">
+        <summary>6. Do you offer outstation travel?</summary>
+        <div class="answer">Yes. We cover Pondicherry, Bangalore, Tirupati, Vellore, Mahabalipuram and other southern destinations.</div>
+      </details>
+      <details class="faq">
+        <summary>7. Can I book a one-way trip?</summary>
+        <div class="answer">Yes. One-way drops between Chennai and regional cities are available without return tariff charges.</div>
+      </details>
+      <details class="faq">
+        <summary>8. How are travel charges calculated?</summary>
+        <div class="answer">Charges depend on distance, duration, vehicle type and trip style. You receive an upfront, transparent quote before confirming.</div>
+      </details>
+      <details class="faq">
+        <summary>9. Are toll and parking charges included?</summary>
+        <div class="answer">Your quote states clearly whether tolls and parking are included. There are no hidden billing surprises.</div>
+      </details>
+      <details class="faq">
+        <summary>10. How can I get a customised quotation?</summary>
+        <div class="answer">Share your pickup location, destination, vehicle preference and travel date through the quote form or on WhatsApp.</div>
+      </details>
+      <details class="faq wide">
+        <summary>11. Can I book through WhatsApp?</summary>
+        <div class="answer">Yes. Use the WhatsApp button on this page to chat directly with our dispatch desk for personalised travel enquiries.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Concierge banner -->
+<section class="banner" style="padding-top:0;">
+  <div class="container">
+    <div class="banner-card">
+      <div class="banner-text">
+        <span class="eyebrow">Seamless Concierge Dispatch</span>
+        <h2>Your Next Journey Is Just One Message Away.</h2>
+        <p>Tell us where you want to go. Share your travel requirements, and our team will help you explore the right vehicle and travel option with swift, courteous professionalism.</p>
+        <div class="banner-actions">
+          <a href="#quote" class="btn btn-gold">Book Your Ride</a>
+          <a href="https://wa.me/919941804390" target="_blank" rel="noopener" class="btn btn-wa">WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="banner-visual" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Quote form -->
+<section id="quote" class="quote">
+  <div class="container quote-wrap">
+    <div class="section-head" style="margin-bottom:0;">
+      <span class="eyebrow">Get a Quote</span>
+      <h2>Get a Travel Quote That Fits Your Journey.</h2>
+      <p>Every journey is different. Our quotations are based on your pickup location, destination, vehicle preference, travel duration and applicable additional expenses.</p>
+    </div>
+
+    <div class="form-card">
+      <form id="quoteForm" class="quote-form" novalidate>
+        <div class="field">
+          <label for="name">Full Name <span class="req">*</span></label>
+          <input id="name" name="name" type="text" placeholder="e.g. S. Ramanathan" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="phone">Mobile Number (+91) <span class="req">*</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="e.g. 99418 04390" autocomplete="tel" inputmode="tel" required />
+        </div>
+        <div class="field full">
+          <label for="email">Email Address <span class="req">*</span></label>
+          <input id="email" name="email" type="email" placeholder="e.g. you@example.com" autocomplete="email" required />
+        </div>
+
+        <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+
+        <div class="form-footer">
+          <small>We respond promptly with verified vehicle availability and all-inclusive pricing.</small>
+          <button id="submitBtn" type="submit" class="btn btn-gold">Get Your Travel Quote</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="whatsapp-box">
+      <div>
+        <h3>Prefer WhatsApp?</h3>
+        <p>Chat directly with our dispatch desk for personalised travel enquiries.</p>
+      </div>
+      <a href="https://wa.me/919941804390" target="_blank" rel="noopener" class="btn btn-wa">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Quick dispatch -->
+<section class="dispatch" style="padding-top:0;">
+  <div class="container">
+    <div class="dispatch-bar">
+      <div class="field">
+        <label for="qPickup">Pickup Location</label>
+        <input id="qPickup" type="text" placeholder="e.g. Dr. Thomas Road, T. Nagar, Airport" />
+      </div>
+      <div class="field">
+        <label for="qDest">Destination</label>
+        <input id="qDest" type="text" placeholder="e.g. Mahabalipuram, Bangalore, Pondy" />
+      </div>
+      <div class="field">
+        <label for="qDate">Travel Date</label>
+        <input id="qDate" type="date" />
+      </div>
+      <a id="qWa" href="https://wa.me/919941804390" target="_blank" rel="noopener" class="btn btn-wa">WhatsApp Instant Dispatch</a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Testimonials -->
+<section id="reviews" class="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Customer Experiences</span>
+      <h2>Every Journey Has a Story.</h2>
+      <p>We value every customer and every journey entrusted to our service. Explore genuine customer feedback and experiences.</p>
+    </div>
+
+    <div class="grid-3">
+      <figure class="card quote-card">
+        <div class="mark" aria-hidden="true">&ldquo;</div>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>Punctual airport transfer from T. Nagar at 4:00 AM. Driver was courteous, vehicle spotless, and the drive to the airport was smooth and completely stress-free.</blockquote>
+        <figcaption>
+          <div class="author">K. Narayanan</div>
+          <div class="role">AIRPORT TRANSFER SERVICE</div>
+        </figcaption>
+      </figure>
+      <figure class="card quote-card">
+        <div class="mark" aria-hidden="true">&ldquo;</div>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>Booked a trusted outstation chauffeur for our family trip to Pondicherry. The driver was exceptionally polite, skilled, and took great care of our parents and luggage throughout the weekend.</blockquote>
+        <figcaption>
+          <div class="author">S. Jayashree &amp; Family</div>
+          <div class="role">OUTSTATION FAMILY TRAVEL</div>
+        </figcaption>
+      </figure>
+      <figure class="card quote-card">
+        <div class="mark" aria-hidden="true">&ldquo;</div>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>Hired a call driver for my automatic sedan during Chennai peak evening traffic for a family wedding in Adyar. Reliable, disciplined, and very careful with parking.</blockquote>
+        <figcaption>
+          <div class="author">V. Arvind</div>
+          <div class="role">PROFESSIONAL CALL DRIVER SERVICE</div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Location -->
+<section id="location" class="location">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Office Location</span>
+      <h2>Find Us in T. Nagar, Chennai - Location &amp; Google Maps</h2>
+      <p>Centrally situated in T. Nagar, Chennai. Easily accessible for on-demand call driver dispatch, corporate car rentals, and 24/7 airport transport coordination.</p>
+    </div>
+
+    <div class="loc-grid">
+      <div class="nap">
+        <div>
+          <span class="eyebrow" style="margin-bottom:8px;">Verified Chennai Business Location</span>
+          <h3>Sri Ganapathy Call Drivers &amp; Travels</h3>
+          <div class="tagline" style="margin-top:6px;">Your Journey, Our Responsibility.</div>
+        </div>
+
+        <div class="nap-row">
+          <div class="ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div>
+            <small>REGISTERED OFFICE ADDRESS</small>
+            <div>K Block, No. 13, Dr. Thomas Road, T. Nagar<br />Chennai – 600017, Tamil Nadu, India</div>
+          </div>
+        </div>
+        <div class="nap-row">
+          <div class="ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div>
+            <small>24/7 DISPATCH HOTLINE</small>
+            <a href="tel:+919941804390">+91 99418 04390</a>
+          </div>
+        </div>
+        <div class="nap-row">
+          <div class="ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div>
+            <small>DIRECT WHATSAPP DESK</small>
+            <a href="https://wa.me/919941804390" target="_blank" rel="noopener">+91 99418 04390 (Chat Online)</a>
+          </div>
+        </div>
+        <div class="nap-row">
+          <div class="ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div>
+            <small>OPERATING HOURS</small>
+            <div>24 Hours / 7 Days a Week (All 365 Days)</div>
+          </div>
+        </div>
+
+        <div>
+          <small style="display:block;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;color:var(--gold);margin-bottom:12px;">PRIMARY CHENNAI SERVICE HUB &amp; COVERAGE</small>
+          <div class="areas">
+            <span>Call Drivers in T. Nagar Chennai</span>
+            <span>Car Rental in T. Nagar</span>
+            <span>Call Driver Service Chennai</span>
+            <span>Car Rental Chennai 600017</span>
+            <span>Outstation Travels from Chennai</span>
+            <span>Anna Nagar</span>
+            <span>Adyar</span>
+            <span>OMR / ECR</span>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=K+Block+No+13+Dr+Thomas+Road+T+Nagar+Chennai+600017" target="_blank" rel="noopener">Get Directions on Google Maps</a>
+          <a class="btn btn-gold" href="tel:+919941804390">Call +91 99418 04390</a>
+        </div>
+      </div>
+
+      <div class="map-card" role="img" aria-label="Map showing the office location in T. Nagar, Chennai">
+        <div class="map-pin" aria-hidden="true"></div>
+        <div class="map-info">
+          <div>
+            <p>K Block, No. 13, Dr. Thomas Road, T. Nagar, Chennai – 600017</p>
+            <small>Map preview</small>
+          </div>
+          <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=K+Block+No+13+Dr+Thomas+Road+T+Nagar+Chennai+600017" target="_blank" rel="noopener">Open Full Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Closing CTA -->
+<section class="closing">
+  <div class="container">
+    <span class="eyebrow">Confidence in Every Mile</span>
+    <h2>Comfortable. <em>Confident.</em> Dispatched.</h2>
+    <p>Zero cancellation fee on advance airport bookings &bull; 24/7 dedicated dispatch.</p>
+    <span class="phone">+91 99418 04390</span>
+    <div class="closing-actions">
+      <a href="tel:+919941804390" class="btn btn-gold">Call Us Now</a>
+      <a href="https://wa.me/919941804390" target="_blank" rel="noopener" class="btn btn-wa">WhatsApp Instant Dispatch</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container foot">
+    <p>&copy; 2026 Sri Ganapathy Call Drivers &amp; Travels. K Block, No. 13, Dr. Thomas Road, T. Nagar, Chennai – 600017.</p>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#faq">FAQ</a>
+      <a href="#location">Location</a>
+      <a href="#quote">Get a Quote</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/919941804390" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5zM12 20.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.8.7.8-2.7-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8.9-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.7 4.7 0 0 0 1 2.5 10.8 10.8 0 0 0 4.2 3.7c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script>
+  // Apps Script Web App URL (deployed)
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwoIsExmYXbrLpF32g3upLN2vDX9tiovjQwYwcX2mi8LKha8fJ4Z__k6Rd6mLVRSDmu/exec";
+
+  const form = document.getElementById("quoteForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const statusEl = document.getElementById("formStatus");
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Quick dispatch bar: build the WhatsApp message from the optional fields
+  const qWa = document.getElementById("qWa");
+  function updateQuickWhatsApp() {
+    const pickup = document.getElementById("qPickup").value.trim();
+    const dest = document.getElementById("qDest").value.trim();
+    const date = document.getElementById("qDate").value;
+    const parts = ["Hello, I would like a travel quote."];
+    if (pickup) parts.push("Pickup: " + pickup);
+    if (dest) parts.push("Destination: " + dest);
+    if (date) parts.push("Date: " + date);
+    qWa.href = "https://wa.me/919941804390?text=" + encodeURIComponent(parts.join("\n"));
+  }
+  ["qPickup", "qDest", "qDate"].forEach(id =>
+    document.getElementById(id).addEventListener("input", updateQuickWhatsApp)
+  );
+  updateQuickWhatsApp();
+
+  function showStatus(type, message) {
+    statusEl.className = "status show " + type;
+    statusEl.textContent = message;
+  }
+
+  function setLoading(isLoading) {
+    submitBtn.disabled = isLoading;
+    submitBtn.textContent = isLoading ? "Sending..." : "Get Your Travel Quote";
+  }
+
+  function showSuccess() {
+    setLoading(false);
+    form.reset();
+    showStatus("ok", "Thank you! Your enquiry has been received. Our dispatch desk will contact you shortly.");
+  }
+
+  function showError(message) {
+    setLoading(false);
+    showStatus("err", message || "Something went wrong. Please try again or message us on WhatsApp.");
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    statusEl.className = "status";
+
+    const name = form.elements["name"].value.trim();
+    const phone = form.elements["phone"].value.trim();
+    const email = form.elements["email"].value.trim();
+
+    ["name", "phone", "email"].forEach(f => form.elements[f].classList.remove("invalid"));
+
+    if (!name || !phone || !email) {
+      ["name", "phone", "email"].forEach(f => {
+        if (!form.elements[f].value.trim()) form.elements[f].classList.add("invalid");
+      });
+      showError("Please fill in your name, mobile number and email.");
+      return;
+    }
+    if (!EMAIL_RE.test(email)) {
+      form.elements["email"].classList.add("invalid");
+      showError("Please enter a valid email address.");
+      return;
+    }
+
+    const url = SCRIPT_URL + "?" + new URLSearchParams({ name: name, email: email, phone: phone });
+
+    setLoading(true);
+    fetch(url, { method: "GET", mode: "no-cors" })
+      .then(() => showSuccess())
+      .catch(() => showError());
+  });
+</script>
+</body>
+</html>
